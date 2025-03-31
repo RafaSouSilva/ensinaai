@@ -1,0 +1,491 @@
+/* Estilos para a seção de demonstração */
+.demo-interface {
+    background: #fff;
+    transition: all 0.3s ease;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.youtube-input-container .form-control {
+    border-radius: 0;
+    font-size: 1rem;
+}
+
+.youtube-input-container .form-control:focus {
+    box-shadow: none;
+    border-color: #dee2e6;
+}
+
+.video-preview-container {
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.video-info {
+    border-top: 1px solid #eee;
+}
+
+/* Estilização das tabs */
+.nav-pills .nav-link {
+    color: #6c757d;
+    border-radius: 50px;
+    padding: 0.75rem 1.5rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-pills .nav-link i {
+    font-size: 1.1rem;
+}
+
+.nav-pills .nav-link.active {
+    background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Placeholder content */
+.placeholder-content {
+    min-height: 300px;
+}
+
+.placeholder-item {
+    height: 20px;
+    background: #f8f9fa;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .demo-interface {
+        padding: 1rem !important;
+    }
+    
+    .nav-pills .nav-link {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Animações e efeitos hover */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+.video-preview-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.3);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.video-preview-container:hover .video-overlay {
+    opacity: 1;
+}
+
+.video-overlay i {
+    font-size: 4rem;
+    opacity: 0.9;
+}
+
+/* Estilos adicionais para a demonstração */
+.demo-nav {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+}
+
+.demo-logo {
+    font-size: 1.25rem;
+}
+
+.content-box {
+    max-height: 500px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0,0,0,0.2) transparent;
+}
+
+.content-box::-webkit-scrollbar {
+    width: 6px;
+}
+
+.content-box::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 3px;
+}
+
+.summary-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.summary-text ul,
+.summary-text ol {
+    padding-left: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.summary-text li {
+    margin-bottom: 0.5rem;
+}
+
+.question-card {
+    border: 1px solid rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.question-card:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.form-check-input:checked {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+/* Melhorias na responsividade */
+@media (max-width: 768px) {
+    .demo-interface {
+        padding: 1rem !important;
+    }
+    
+    .content-box {
+        max-height: 300px;
+    }
+}
+
+/* Estilos da Navbar */
+.navbar {
+    background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+    padding: 1rem 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand i {
+    font-size: 1.5rem;
+}
+
+.navbar .nav-link {
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #3498db !important;
+    transform: translateY(-2px);
+}
+
+.navbar .btn {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.navbar .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Estilos da seção AI Teacher */
+.ai-teacher {
+    background-color: #ffffff;
+    position: relative;
+    padding: 4rem 0;
+}
+
+.ai-features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.feature-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(13, 110, 253, 0.1);
+    border-radius: 50%;
+}
+
+.feature-icon i {
+    font-size: 1.25rem;
+}
+
+.ai-robot-container {
+    background-color: rgba(13, 110, 253, 0.1);
+    padding: 3rem;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.ai-status-badge {
+    display: inline-flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 1.5rem;
+}
+
+.pulse-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #28a745;
+    border-radius: 50%;
+    margin-right: 10px;
+    position: relative;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(40, 167, 69, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(40, 167, 69, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(40, 167, 69, 0);
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .ai-teacher {
+        padding: 2rem 0;
+    }
+
+    .ai-teacher-content {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .ai-features-list li {
+        justify-content: center;
+    }
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* AI Teacher Section */
+.ai-teacher {
+    background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+}
+
+.ai-features-list {
+    list-style: none;
+    padding: 0;
+}
+
+.ai-features-list li {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}
+
+.ai-features-list i {
+    color: #2ecc71;
+    font-size: 1.25rem;
+}
+
+.pulse-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #2ecc71;
+    border-radius: 50%;
+    margin-right: 8px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(46, 204, 113, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(46, 204, 113, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(46, 204, 113, 0);
+    }
+}
+
+/* Estilos dos cards de passos */
+.step-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.step-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+.step-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #0d6efd 0%, #0dcaf0 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.step-icon i {
+    font-size: 2rem;
+    color: white;
+}
+
+.step-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(135deg, #0d6efd 0%, #0dcaf0 100%);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.step-card:hover::before {
+    opacity: 1;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .step-card {
+        text-align: center;
+    }
+    
+    .step-icon {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Estilos para o chat e questões */
+.chat-messages {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0,0,0,0.2) transparent;
+}
+
+.chat-messages::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chat-messages::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 3px;
+}
+
+.message {
+    margin-bottom: 1rem;
+}
+
+.message-content {
+    margin-top: 0.25rem;
+    max-width: 80%;
+}
+
+.user-message {
+    text-align: right;
+}
+
+.user-message .message-content {
+    background-color: #0d6efd;
+    color: white;
+    margin-left: auto;
+}
+
+.ai-message .message-content {
+    background-color: #f8f9fa;
+}
+
+.chat-input .input-group {
+    border-top: 1px solid #dee2e6;
+    padding-top: 1rem;
+}
+
+.question-card textarea {
+    resize: none;
+    border: 1px solid #dee2e6;
+}
+
+.question-card textarea:focus {
+    box-shadow: none;
+    border-color: #0d6efd;
+}
+
+/* Melhorias visuais */
+.btn-send {
+    padding: 0.375rem 1rem;
+}
+
+.btn-send i {
+    font-size: 1.1rem;
+}
+
+/* Estilos adicionais para o chat */
+.chat-help-button {
+    margin: 2rem 0;
+}
+
+.chat-container {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.chat-input .form-control:focus {
+    box-shadow: none;
+    border-color: #0d6efd;
+} 
